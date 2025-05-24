@@ -73,7 +73,8 @@ const AnimatedRectangles = () => {
           key={rect.id}
           className={`absolute ${rect.size} ${rect.position} opacity-60
                      bg-gradient-to-r from-[#151628] to-[#3e0c1e]
-                     backdrop-blur-sm border-2 border-white/20 rounded-3xl`}
+                     backdrop-blur-sm border-2 border-white/20 rounded-3xl
+                     shadow-md shadow-[grey]  `}
           style={{
             '--rotation': rect.rotation.includes('-') ? rect.rotation.replace('-rotate-', '-') + 'deg' : rect.rotation.replace('rotate-', '') + 'deg',
             animation: `floatMove ${8 + (rect.id % 3)}s ease-in-out infinite`,
