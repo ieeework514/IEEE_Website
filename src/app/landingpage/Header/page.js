@@ -12,6 +12,12 @@ import {
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
+import { Poppins } from "next/font/google";
+
+const poppins=Poppins({
+  weight: ['400'],
+   subsets: ['latin']
+})
 
 export function NavbarDemo() {
   const navItems = [
@@ -75,7 +81,7 @@ export function NavbarDemo() {
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-black  dark:text-neutral-300">
+                className={`relative text-black ${poppins.className}  dark:text-neutral-300`}>
                 <span className="block">{item.name}</span>
               </a>
             ))}

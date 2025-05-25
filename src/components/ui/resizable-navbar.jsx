@@ -9,6 +9,16 @@ import {
 } from "motion/react";
 
 import React, { useRef, useState } from "react";
+import { Poppins } from "next/font/google";
+import Image from "next/image";
+import headerlogo from "../../../public/headerlogo.png"
+import ieee from "../../../public/ieee-1 1.png"
+import ieee1 from "../../../public/ieee_logo_blue.png"
+
+const poppins=Poppins({
+  weight: ['400'],
+   subsets: ['latin']
+})
 
 
 export const Navbar = ({
@@ -94,7 +104,7 @@ export const NavItems = ({
         <a
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-4 py-2 hover:text-black text-white text-xl dark:text-neutral-300"
+          className={`relative px-4 py-2 hover:text-black  ${poppins.className}  text-white text-xl dark:text-neutral-300`}
           key={`link-${idx}`}
           href={item.link}>
           {hovered === idx && (
@@ -194,12 +204,9 @@ export const NavbarLogo = () => {
     (<a
       href="#"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black">
-      <img
-        src="https://assets.aceternity.com/logo-dark.png"
-        alt="logo"
-        width={30}
-        height={30} />
-      <span className="font-medium text-black dark:text-white">Startup</span>
+      <Image src={ieee1} height={20} width={100} alt="ieeeheader" ></Image>
+      
+      {/* <span className="font-medium text-black dark:text-white">Startup</span> */}
     </a>)
   );
 };
