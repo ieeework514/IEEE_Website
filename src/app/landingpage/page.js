@@ -2,6 +2,9 @@
 "use client";
 import React from "react";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import Image from "next/image";
+import ieee from '../../../public/ieee-1 1.png'
+import { px } from "motion";
 
 export function BackgroundBeamsDemo() {
 
@@ -15,6 +18,12 @@ export function BackgroundBeamsDemo() {
       >
         {/* <AnimatedCircles></AnimatedCircles> */}
         <AnimatedRectangles></AnimatedRectangles>
+        <div>
+          <div style={{ position: "relative", width: "50%", height: "30%" }}>
+         <Image src={ieee} alt="Ieee image"  height={"200px"} width={"200px"} />
+    </div>
+        </div>
+
 
        
      

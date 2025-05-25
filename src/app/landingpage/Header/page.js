@@ -16,17 +16,33 @@ import { useState } from "react";
 export function NavbarDemo() {
   const navItems = [
     {
-      name: "Features",
+      name: "Events",
       link: "#features",
     },
     {
-      name: "Pricing",
+      name: "Our Team",
       link: "#pricing",
     },
     {
-      name: "Contact",
+      name: "Leaderboard",
       link: "#contact",
     },
+    {
+        name: "Workshop",
+        link: "",
+    },
+    {
+        name: "About Us",
+        link: ""
+    },
+    {
+        name: "Alumni",
+        link: "",
+    },
+    {
+        name:"Contact Us",
+        link: ""
+    }
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -38,9 +54,9 @@ export function NavbarDemo() {
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
-          <div className="flex items-center gap-4">
+          <div className="flex  items-center gap-4">
             <NavbarButton variant="secondary">Login</NavbarButton>
-            <NavbarButton variant="primary">Book a call</NavbarButton>
+            <NavbarButton variant="primary">Sign Up</NavbarButton>
           </div>
         </NavBody>
 
@@ -59,11 +75,11 @@ export function NavbarDemo() {
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-600 dark:text-neutral-300">
+                className="relative text-black  dark:text-neutral-300">
                 <span className="block">{item.name}</span>
               </a>
             ))}
-            <div className="flex w-full flex-col gap-4">
+            <div className="flex w-full  flex-col gap-4">
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
@@ -74,7 +90,7 @@ export function NavbarDemo() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full">
-                Book a call
+                Sign Up
               </NavbarButton>
             </div>
           </MobileNavMenu>
