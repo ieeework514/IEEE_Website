@@ -8,10 +8,11 @@ import ieeelogo from "../../../public/ieee_logo_blue.png";
 import { Francois_One } from "next/font/google";
 import { Merriweather } from "next/font/google";
 import { Poppins } from "next/font/google";
+import CanvasCursor from "@/components/ui/canvas-cursor-effect";
 
-const poppins=Poppins({
+const poppins = Poppins({
   weight: ['400'],
-   subsets: ['latin']
+  subsets: ['latin']
 })
 
 const francois = Francois_One({
@@ -31,13 +32,23 @@ export function BackgroundBeamsDemo() {
     <div className="min-h-screen w-full rounded-md  relative flex flex-col bg-gradient-to-r from-[#151628] to-[#3e0c1e] items-center justify-center antialiased">
       {/* <AnimatedCircles></AnimatedCircles> */}
       <AnimatedRectangles></AnimatedRectangles>
-      <div style={{ position: 'relative', width: '60%', height: '150px' }}>
+      <div style={{ position: 'relative', width: '60%', height: '150px', margin:'10px' }}>
         <Image src={ieee} alt="ieee image" fill style={{ objectFit: 'contain' }} />
-        
+
       </div>
-      <h1 className={ `sm:text-8xl ${merriweather.className}  text-5xl font-serif bg-gradient-to-tl from-[#615f5f] to-[#d5e4e2] bg-clip-text text-transparent `} >Student Branch</h1>
-       <h1 className={ `sm:text-4xl ${poppins.className}  text-xl sm:mt-0 mt-6 font-serif text-center text-[#c5c2c2] `} >Rajiv Gandhi Institue Of Petroleum Technology</h1>
-      
+      <h1 className={`sm:text-8xl ${merriweather.className}  text-5xl sm:mt-4 font-serif bg-gradient-to-tl from-[#615f5f] to-[#d5e4e2] bg-clip-text text-transparent `} >Student Branch</h1>
+      <h1 className={`sm:text-4xl ${poppins.className}  text-xl sm:mt-4 mt-6 font-serif text-center text-[#c5c2c2] `} >Rajiv Gandhi Institue Of Petroleum Technology</h1>
+
+      <div className="flex flex-row gap-10 pt-8 z-50 ">
+        <button className="w-[200px] h-[50px] rounded-lg text-xl cursor-pointer text-white bg-[#1a1ac7]"> About IEEE_RGIPT</button>
+        <button className="w-[100px] h-[50px] rounded-lg text-xl cursor-pointer bg-[white]"> Events </button>
+
+        
+
+
+      </div>
+
+
 
       <BackgroundBeams />
     </div>

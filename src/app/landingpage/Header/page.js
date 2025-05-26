@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
 import { Poppins } from "next/font/google";
+import { Button } from "@/components/ui/moving-border";
 
 const poppins=Poppins({
   weight: ['400'],
@@ -60,9 +61,9 @@ export function NavbarDemo() {
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
-          <div className="flex  items-center gap-4">
-            <NavbarButton variant="secondary">Login</NavbarButton>
-            <NavbarButton variant="primary">Sign Up</NavbarButton>
+          <div className="flex items-center justify-center gap-2">
+             <NavbarButton variant="primary"  className=" bg-[#4a6cd2] ">Login</NavbarButton>
+            <NavbarButton variant="gradient"  className=" bg-[#4a6cd2] ">Sign Up</NavbarButton>
           </div>
         </NavBody>
 
@@ -81,7 +82,7 @@ export function NavbarDemo() {
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className={`relative text-black ${poppins.className}  dark:text-neutral-300`}>
+                className={`relative text-black ${poppins.className} text-xl dark:text-neutral-300`}>
                 <span className="block">{item.name}</span>
               </a>
             ))}
@@ -89,13 +90,13 @@ export function NavbarDemo() {
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
-                className="w-full">
+                className="w-full bg-[#4a6cd2] text-xl">
                 Login
               </NavbarButton>
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
-                className="w-full">
+                className="w-full bg-[#4a6cd2] text-xl">
                 Sign Up
               </NavbarButton>
             </div>
