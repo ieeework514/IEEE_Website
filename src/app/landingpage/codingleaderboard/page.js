@@ -2,7 +2,13 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Poppins } from "next/font/google";
 import { useState } from "react";
+
+const poppins=Poppins({
+  weight: ['400'],
+   subsets: ['latin']
+})
 
 const CodingLeaderboard = () => {
   const [activeTab, setActiveTab] = useState("signup");
@@ -50,9 +56,9 @@ const CodingLeaderboard = () => {
 
           <motion.p
             variants={itemVariants}
-            className="text-lg text-blue-100 mb-8 text-center max-w-3xl mx-auto"
+            className="text-lg text-blue-100 m-8 text-center max-w-3xl mx-auto"
           >
-            Submit your LeetCode, CodeForces, and CodeChef IDs after signing up to rank yourself among all students at BIT Mesra. Showcase your coding skills and compete with peers!
+            Submit your LeetCode, CodeForces, and CodeChef IDs after signing up to rank yourself among all students at <strong>RGIPT</strong> . Showcase your coding skills and compete with peers!
           </motion.p>
 
           <motion.div
@@ -84,12 +90,12 @@ const CodingLeaderboard = () => {
 
           <motion.div
             variants={containerVariants}
-            className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8"
+            className="grid grid-cols-2 md:grid-cols-4  gap-4 mt-8"
           >
-            <StatCard number="500+" label="Active Members" delay={0.1} />
+            <StatCard number="150+" label="Active Members" delay={0.1} />
             <StatCard number="50+" label="Events Organized" delay={0.2} />
             <StatCard number="20+" label="Workshops" delay={0.3} />
-            <StatCard number="21+" label="Prize Pool" delay={0.4} />
+            <StatCard number="25+" label="Internship provided" delay={0.4} />
           </motion.div>
         </div>
       </div>
@@ -109,7 +115,7 @@ const PlatformIcon = ({ name }) => {
       whileHover={{ y: -5 }}
       className="bg-white/10 backdrop-blur-sm p-4 rounded-xl flex items-center justify-center cursor-pointer hover:bg-white/20 transition-all"
     >
-      <div className="text-white font-medium">{name}</div>
+      <div className={`text-white ${poppins.className} font-medium`}>{name}</div>
       {/* If you have logos:
       <img 
         src={logoMap[name]} 

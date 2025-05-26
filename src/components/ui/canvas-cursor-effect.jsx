@@ -274,7 +274,7 @@ const CanvasCursor = () => {
     <canvas
       ref={canvasRef}
       id="canvas"
-      className="pointer-events-none inset-0 w-full  z-150"
+      className="pointer-events-none fixed top-0 left-0 z-50 w-full h-full"
     />
   );
 };

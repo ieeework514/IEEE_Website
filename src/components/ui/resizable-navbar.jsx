@@ -14,6 +14,7 @@ import Image from "next/image";
 import headerlogo from "../../../public/headerlogo.png"
 import ieee from "../../../public/ieee-1 1.png"
 import ieee1 from "../../../public/ieee_logo_blue.png"
+import ieee2 from "../../../public/Vector.png"
 
 const poppins=Poppins({
   weight: ['400'],
@@ -202,9 +203,9 @@ export const MobileNavToggle = ({
 export const NavbarLogo = () => {
   return (
     (<a
-      href="#"
+      href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black">
-      <Image src={ieee} height={20} width={100} alt="ieeeheader" ></Image>
+      <Image src={ieee2} height={20} width={100} alt="ieeeheader" ></Image>
       
       {/* <span className="font-medium text-black dark:text-white">Startup</span> */}
     </a>)

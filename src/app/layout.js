@@ -28,6 +28,8 @@ export default function RootLayout({ children }) {
         <NavbarDemo></NavbarDemo>
         {/* <CanvasCursor></CanvasCursor> */}
 
+        <CanvasCursor></CanvasCursor>
+
 
         {children}
 
