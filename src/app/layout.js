@@ -1,7 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import {  NavbarDemo } from "./landingpage/Header/page";
+import { NavbarDemo } from "./landingpage/Header/page";
 import CanvasCursor from "@/components/ui/canvas-cursor-effect";
+import Footer from "./Footer/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,10 +25,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-       <NavbarDemo></NavbarDemo>
-       {/* <CanvasCursor></CanvasCursor> */}
+        <NavbarDemo></NavbarDemo>
+        {/* <CanvasCursor></CanvasCursor> */}
+
 
         {children}
+
+        <Footer></Footer>
       </body>
     </html>
   );

@@ -1,5 +1,7 @@
 // IN this the timeline of the events past events are mentioned
 
+"use client"
+
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 
