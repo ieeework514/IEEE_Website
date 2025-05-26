@@ -42,7 +42,7 @@ const Footer = () => {
         <div className="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 gap-8 mb-8">
           {/* Brand Section */}
           <motion.div variants={itemVariants} className="space-y-4">
-            <h2 className="text-2xl font-bold">IEEE BIT Mesra</h2>
+            <h2 className="text-2xl font-bold">IEEE  RGIPT</h2>
             <p className="text-gray-300">
               Advancing technology for Humanity through innovation, education, and collaboration.
             </p>
@@ -88,15 +88,15 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-start">
                 <PhoneIcon className="h-5 w-5 mt-0.5 mr-2 flex-shrink-0" />
-                <span>+91 9123388559</span>
+                <span>+91 7870304944</span>
               </li>
               <li className="flex items-start">
                 <MailIcon className="h-5 w-5 mt-0.5 mr-2 flex-shrink-0" />
-                <span>ieee@bitmesra.ac.in</span>
+                <span>ieee@rgipt.ac.in</span>
               </li>
               <li className="flex items-start">
                 <LocationIcon className="h-5 w-5 mt-0.5 mr-2 flex-shrink-0" />
-                <span>BIT Mesra, Ranchi, Jharkhand - 835213</span>
+                <span> RGIPT, Amethi, UTTAR PRADESH - 229305</span>
               </li>
               <li className="flex items-start">
                 <WhatsAppIcon className="h-5 w-5 mt-0.5 mr-2 flex-shrink-0" />
@@ -115,7 +115,7 @@ const Footer = () => {
           className="flex flex-col md:flex-row justify-between items-center"
         >
           <motion.p variants={itemVariants} className="text-gray-400 mb-4 md:mb-0">
-            © 2025 IEEE BIT Mesra. All rights reserved.
+            © 2025 IEEE  RGIPT. All rights reserved.
           </motion.p>
 
           <motion.div variants={itemVariants} className="flex space-x-6">
