@@ -1,6 +1,7 @@
 import CodingLeaderboard from "./landingpage/codingleaderboard/page";
 import { BackgroundBeamsDemo } from "./landingpage/page";
 import { TimelineDemo } from "./Timeline/page";
+import WhatWeDo from "./whatwedo/page";
 
 
 
@@ -9,6 +10,7 @@ export default function Home() {
     <div className=" bg-gradient-to-r from-[#404371] to-[#780831]">
       <BackgroundBeamsDemo></BackgroundBeamsDemo>
       <CodingLeaderboard></CodingLeaderboard>
+      <WhatWeDo></WhatWeDo>
       <TimelineDemo></TimelineDemo>
 
       
