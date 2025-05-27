@@ -79,6 +79,7 @@ export const NavBody = ({
       }}
       className={cn(
         "relative z-[60] mx-auto hidden w-full max-w-8xl flex-row items-center justify-between self-start rounded-full bg-transparent px-4 py-2 lg:flex dark:bg-transparent",
+        
         visible && "bg-white/80 dark:bg-neutral-950/80",
         className
       )}>
@@ -128,13 +129,13 @@ export const MobileNav = ({
   return (
     (<motion.div
       animate={{
-        backdropFilter: visible ? "blur(10px)" : "none",
+        backdropFilter: visible ? "none" : "none",
         boxShadow: visible
           ? "0 0 24px rgba(34, 42, 53, 0.06), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.04), 0 0 4px rgba(34, 42, 53, 0.08), 0 16px 68px rgba(47, 48, 55, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1) inset"
           : "none",
-        width: visible ? "90%" : "100%",
-        paddingRight: visible ? "12px" : "0px",
-        paddingLeft: visible ? "12px" : "0px",
+        width: visible ? "100%" : "100%",
+        paddingRight: visible ? "0px" : "12px",
+        paddingLeft: visible ? "0px" : "12px",
         borderRadius: visible ? "4px" : "2rem",
         y: visible ? 20 : 0,
       }}
@@ -144,7 +145,7 @@ export const MobileNav = ({
         damping: 50,
       }}
       className={cn(
-        "relative z-50 mx-auto flex w-full  opacity-96  bg-gradient-to-r  from-[#404371] to-[#780831]   backdrop-blur-sm border-2 border-white/20 rounded-3xl  max-w-[calc(100vw-2rem)] flex-col items-center justify-between  px-0 py-2 lg:hidden",
+        "relative z-50 mx-auto flex w-full  opacity-96  bg-gradient-to-r  from-[#404371] to-[#780831]   backdrop-blur-sm border-2 border-white/20 rounded-3xl  max-w-[calc(100vw-0rem)] flex-col items-center justify-between  px-0 py-2 lg:hidden",
         visible && " dark:bg-neutral-950/80",
         className
       )}>
@@ -205,7 +206,7 @@ export const NavbarLogo = () => {
     (<a
       href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black">
-      <Image src={ieee2} height={20} width={100} alt="ieeeheader" ></Image>
+      <Image src={ieee} height={20} width={100} alt="ieeeheader" ></Image>
       
       {/* <span className="font-medium text-black dark:text-white">Startup</span> */}
     </a>)

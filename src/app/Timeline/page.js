@@ -12,7 +12,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p
-            className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            className="mb-8 text-xs font-normal bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent md:text-sm dark:text-neutral-200">
           About Events
           </p>
           <div className="grid grid-cols-2 gap-4">
@@ -49,11 +49,11 @@ export function TimelineDemo() {
       content: (
         <div>
           <p
-            className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            className="mb-8 text-xs font-normal bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent md:text-sm dark:text-neutral-200">
            About Events
           </p>
           <p
-            className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            className="mb-8 text-xs font-normal bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent md:text-sm dark:text-neutral-200">
             About Events
           </p>
           <div className="grid grid-cols-2 gap-4">
@@ -90,7 +90,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p
-            className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            className="mb-4 text-xs font-normal bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent md:text-sm dark:text-neutral-200">
             Deployed 5 new components on Aceternity today
           </p>
           <div className="mb-8">
