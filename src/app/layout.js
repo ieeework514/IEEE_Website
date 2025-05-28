@@ -1,8 +1,10 @@
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { NavbarDemo } from "./landingpage/Header/page";
 import CanvasCursor from "@/components/ui/canvas-cursor-effect";
 import Footer from "./Footer/page";
+import CanvasCursorWrapper from "./handelningthedesktop/page"; // adjust path accordingly
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,6 +22,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+
   return (
     <html lang="en">
       <body
@@ -28,7 +32,7 @@ export default function RootLayout({ children }) {
         <NavbarDemo></NavbarDemo>
         {/* <CanvasCursor></CanvasCursor> */}
 
-        <CanvasCursor></CanvasCursor>
+        <CanvasCursorWrapper></CanvasCursorWrapper>
 
 
         {children}
