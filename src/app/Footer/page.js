@@ -36,7 +36,7 @@ const Footer = () => {
       whileInView="visible"
       viewport={{ once: true }}
       variants={containerVariants}
-      className="bg-gradient-to-r from-[#404371] to-[#780831] text-white pt-12 pb-6 border-t-2 border-[#d69e9e] px-4 sm:px-6 lg:px-8"
+      className="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white pt-12 pb-6 border-t-2 border-[#d69e9e] px-4 sm:px-6 lg:px-8"
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 gap-8 mb-8">

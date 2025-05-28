@@ -45,7 +45,7 @@ const CodingLeaderboard = () => {
       variants={containerVariants}
       className="w-full min-h-screen mx-auto "
     >
-      <div className=" bg-gradient-to-r from-[#404371] to-[#780831]  shadow-xl overflow-hidden">
+      <div className=" bg-gradient-to-br from-slate-900 via-purple-900  shadow-xl overflow-hidden">
         <div className="p-8 md:p-12">
           <motion.h1
             variants={itemVariants}

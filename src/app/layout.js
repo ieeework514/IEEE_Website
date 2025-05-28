@@ -34,6 +34,8 @@ export default function RootLayout({ children }) {
 
         <CanvasCursorWrapper></CanvasCursorWrapper>
 
+        {/* bg-gradient-to-r from-[#404371] to-[#780831] */}
+
 
         {children}
 

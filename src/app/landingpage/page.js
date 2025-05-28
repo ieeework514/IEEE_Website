@@ -30,7 +30,7 @@ const merriweather = Merriweather({
 
 export function BackgroundBeamsDemo() {
   return (
-    <div className="min-h-screen w-full rounded-md  relative flex flex-col bg-gradient-to-r from-[#151628] to-[#3e0c1e] items-center justify-center antialiased">
+    <div className="min-h-screen w-full rounded-md  relative flex flex-col bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 items-center justify-center antialiased">
       {/* <AnimatedCircles></AnimatedCircles> */}
       <AnimatedRectangles></AnimatedRectangles>
       <div style={{ position: 'relative', width: '60%', height: '150px' }}>
