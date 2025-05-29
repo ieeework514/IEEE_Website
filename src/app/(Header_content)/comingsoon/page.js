@@ -1,7 +1,7 @@
 // This page contain the coming soon page
 // components/ComingSoon.js
 
-"use client"
+"use client";
 // import { useEffect, useState } from 'react';
 
 // const ComingSoon = ({ pageName = "this page" }) => {
@@ -120,18 +120,18 @@
 
 // export default ComingSoon;
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 export default function UnderDevelopment() {
-  const [dots, setDots] = useState('');
+  const [dots, setDots] = useState("");
   const [isVisible, setIsVisible] = useState(false);
 
   // Animated dots effect
   useEffect(() => {
     const interval = setInterval(() => {
-      setDots(prev => {
-        if (prev === '...') return '';
-        return prev + '.';
+      setDots((prev) => {
+        if (prev === "...") return "";
+        return prev + ".";
       });
     }, 500);
 
@@ -143,12 +143,15 @@ export default function UnderDevelopment() {
     setIsVisible(true);
   }, []);
 
-//   bg-gradient-to-br pt-40 from-blue-900 via-purple-900 to-indigo-900
+  //   bg-gradient-to-br pt-40 from-blue-900 via-purple-900 to-indigo-900
 
   return (
-    <div className="min-h-screen  bg-gradient-to-br pt-40 from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-4">
-      <div className={`text-center transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-        
+    <div className="min-h-screen  overflow-clip w-full bg-gradient-to-br pt-40 from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center">
+      <div
+        className={`text-center transform transition-all duration-1000 ${
+          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+        }`}
+      >
         {/* Animated Icon - Floating Code Matrix */}
         <div className="mb-8 relative">
           <div className="w-40 h-40 mx-auto mb-6 relative">
@@ -160,20 +163,47 @@ export default function UnderDevelopment() {
                   {/* Matrix code effect */}
                   <div className="absolute inset-0 opacity-70">
                     <div className="text-green-400 text-xs font-mono animate-pulse">
-                      <div className="animate-bounce" style={{ animationDelay: '0s' }}>&lt;React/&gt;</div>
-                      <div className="animate-bounce ml-4 mt-1" style={{ animationDelay: '0.5s' }}>function()</div>
-                      <div className="animate-bounce ml-2 mt-1" style={{ animationDelay: '1s' }}>{'{...}'}</div>
-                      <div className="animate-bounce ml-6 mt-1" style={{ animationDelay: '1.5s' }}>const</div>
+                      <div
+                        className="animate-bounce"
+                        style={{ animationDelay: "0s" }}
+                      >
+                        &lt;React/&gt;
+                      </div>
+                      <div
+                        className="animate-bounce ml-4 mt-1"
+                        style={{ animationDelay: "0.5s" }}
+                      >
+                        function()
+                      </div>
+                      <div
+                        className="animate-bounce ml-2 mt-1"
+                        style={{ animationDelay: "1s" }}
+                      >
+                        {"{...}"}
+                      </div>
+                      <div
+                        className="animate-bounce ml-6 mt-1"
+                        style={{ animationDelay: "1.5s" }}
+                      >
+                        const
+                      </div>
                     </div>
                     {/* Floating binary */}
-                    <div className="absolute top-2 right-2 text-blue-400 text-xs animate-ping">01</div>
-                    <div className="absolute bottom-4 left-2 text-purple-400 text-xs animate-ping" style={{ animationDelay: '0.7s' }}>10</div>
+                    <div className="absolute top-2 right-2 text-blue-400 text-xs animate-ping">
+                      01
+                    </div>
+                    <div
+                      className="absolute bottom-4 left-2 text-purple-400 text-xs animate-ping"
+                      style={{ animationDelay: "0.7s" }}
+                    >
+                      10
+                    </div>
                   </div>
-                  
+
                   {/* Cursor blink */}
                   <div className="absolute bottom-2 left-2 w-1 h-4 bg-white animate-ping"></div>
                 </div>
-                
+
                 {/* Laptop keyboard */}
                 <div className="h-4 bg-gray-800 rounded-b-xl flex justify-center items-center">
                   <div className="w-8 h-1 bg-gray-600 rounded-full"></div>
@@ -182,38 +212,91 @@ export default function UnderDevelopment() {
             </div>
 
             {/* Floating elements around the laptop */}
-            <div className="absolute -top-4 -left-6 w-8 h-8 bg-yellow-400 rounded-lg animate-bounce transform rotate-12" style={{ animationDelay: '0.2s' }}>
-              <div className="w-full h-full flex items-center justify-center text-white font-bold text-sm">JS</div>
+            <div
+              className="absolute -top-4 -left-6 w-8 h-8 bg-yellow-400 rounded-lg animate-bounce transform rotate-12"
+              style={{ animationDelay: "0.2s" }}
+            >
+              <div className="w-full h-full flex items-center justify-center text-white font-bold text-sm">
+                JS
+              </div>
             </div>
-            
-            <div className="absolute -top-2 -right-4 w-6 h-6 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '0.8s' }}>
-              <div className="w-full h-full flex items-center justify-center text-white font-bold text-xs">⚛</div>
+
+            <div
+              className="absolute -top-2 -right-4 w-6 h-6 bg-blue-500 rounded-full animate-bounce"
+              style={{ animationDelay: "0.8s" }}
+            >
+              <div className="w-full h-full flex items-center justify-center text-white font-bold text-xs">
+                ⚛
+              </div>
             </div>
-            
-            <div className="absolute -bottom-2 -right-6 w-7 h-7 bg-green-500 rounded-lg animate-bounce transform -rotate-12" style={{ animationDelay: '1.2s' }}>
-              <div className="w-full h-full flex items-center justify-center text-white font-bold text-xs">CSS</div>
+
+            <div
+              className="absolute -bottom-2 -right-6 w-7 h-7 bg-green-500 rounded-lg animate-bounce transform -rotate-12"
+              style={{ animationDelay: "1.2s" }}
+            >
+              <div className="w-full h-full flex items-center justify-center text-white font-bold text-xs">
+                CSS
+              </div>
             </div>
-            
-            <div className="absolute -bottom-4 -left-4 w-5 h-5 bg-red-500 rounded-full animate-bounce" style={{ animationDelay: '1.6s' }}>
-              <div className="w-full h-full flex items-center justify-center text-white font-bold text-xs">H</div>
+
+            <div
+              className="absolute -bottom-4 -left-4 w-5 h-5 bg-red-500 rounded-full animate-bounce"
+              style={{ animationDelay: "1.6s" }}
+            >
+              <div className="w-full h-full flex items-center justify-center text-white font-bold text-xs">
+                H
+              </div>
             </div>
 
             {/* Orbiting elements */}
-            <div className="absolute inset-0 animate-spin" style={{ animationDuration: '8s' }}>
+            <div
+              className="absolute inset-0 animate-spin"
+              style={{ animationDuration: "8s" }}
+            >
               <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-purple-400 rounded-full animate-pulse"></div>
               <div className="absolute top-1/2 -right-8 transform -translate-y-1/2 w-2 h-2 bg-pink-400 rounded-full animate-pulse"></div>
               <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-cyan-400 rounded-full animate-pulse"></div>
               <div className="absolute top-1/2 -left-8 transform -translate-y-1/2 w-2 h-2 bg-orange-400 rounded-full animate-pulse"></div>
             </div>
           </div>
-          
+
           {/* Floating code symbols */}
-          <div className="absolute -top-6 -left-8 text-yellow-400 text-lg animate-bounce font-mono" style={{ animationDelay: '0.3s' }}>&lt;/&gt;</div>
-          <div className="absolute -top-8 -right-6 text-blue-400 text-sm animate-bounce font-mono" style={{ animationDelay: '0.7s' }}>{ }</div>
-          <div className="absolute -bottom-4 -left-6 text-green-400 text-lg animate-bounce font-mono" style={{ animationDelay: '1.1s' }}>( )</div>
-          <div className="absolute -bottom-6 -right-8 text-purple-400 text-sm animate-bounce font-mono" style={{ animationDelay: '1.5s' }}>[ ]</div>
-          <div className="absolute top-6 -right-12 text-pink-400 text-xs animate-bounce font-mono" style={{ animationDelay: '1.9s' }}>npm</div>
-          <div className="absolute bottom-8 -left-10 text-orange-400 text-xs animate-bounce font-mono" style={{ animationDelay: '2.3s' }}>git</div>
+          <div
+            className="absolute -top-6 -left-8 text-yellow-400 text-lg animate-bounce font-mono"
+            style={{ animationDelay: "0.3s" }}
+          >
+            &lt;/&gt;
+          </div>
+          <div
+            className="absolute -top-8 -right-6 text-blue-400 text-sm animate-bounce font-mono"
+            style={{ animationDelay: "0.7s" }}
+          >
+            {}
+          </div>
+          <div
+            className="absolute -bottom-4 -left-6 text-green-400 text-lg animate-bounce font-mono"
+            style={{ animationDelay: "1.1s" }}
+          >
+            ( )
+          </div>
+          <div
+            className="absolute -bottom-6 -right-8 text-purple-400 text-sm animate-bounce font-mono"
+            style={{ animationDelay: "1.5s" }}
+          >
+            [ ]
+          </div>
+          <div
+            className="absolute top-6 -right-12 text-pink-400 text-xs animate-bounce font-mono"
+            style={{ animationDelay: "1.9s" }}
+          >
+            npm
+          </div>
+          <div
+            className="absolute bottom-8 -left-10 text-orange-400 text-xs animate-bounce font-mono"
+            style={{ animationDelay: "2.3s" }}
+          >
+            git
+          </div>
         </div>
 
         {/* Main Title */}
@@ -229,37 +312,63 @@ export default function UnderDevelopment() {
         {/* Progress Bar */}
         <div className="w-80 max-w-full mx-auto mb-8">
           <div className="bg-gray-700 rounded-full h-2 overflow-hidden">
-            <div className="bg-gradient-to-r from-blue-500 to-purple-500 h-full rounded-full animate-pulse" style={{ width: '65%' }}></div>
+            <div
+              className="bg-gradient-to-r from-blue-500 to-purple-500 h-full rounded-full animate-pulse"
+              style={{ width: "65%" }}
+            ></div>
           </div>
-          <p className="text-sm text-gray-400 mt-2">Development Progress: 65%</p>
+          <p className="text-sm text-gray-400 mt-2">
+            Development Progress: 65%
+          </p>
         </div>
 
         {/* Features Coming Soon */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 transform hover:scale-105 transition-transform duration-300">
             <div className="text-3xl mb-3">🚀</div>
-            <h3 className="text-lg font-semibold text-white mb-2">Amazing Features</h3>
-            <p className="text-gray-300 text-sm">Cutting-edge functionality designed just for students</p>
+            <h3 className="text-lg font-semibold text-white mb-2">
+              Amazing Features
+            </h3>
+            <p className="text-gray-300 text-sm">
+              Cutting-edge functionality designed just for students
+            </p>
           </div>
-          
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 transform hover:scale-105 transition-transform duration-300" style={{ animationDelay: '0.2s' }}>
+
+          <div
+            className="bg-white/10 backdrop-blur-sm rounded-lg p-6 transform hover:scale-105 transition-transform duration-300"
+            style={{ animationDelay: "0.2s" }}
+          >
             <div className="text-3xl mb-3">💡</div>
-            <h3 className="text-lg font-semibold text-white mb-2">Smart Solutions</h3>
-            <p className="text-gray-300 text-sm">Innovative tools to enhance your academic journey</p>
+            <h3 className="text-lg font-semibold text-white mb-2">
+              Smart Solutions
+            </h3>
+            <p className="text-gray-300 text-sm">
+              Innovative tools to enhance your academic journey
+            </p>
           </div>
-          
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 transform hover:scale-105 transition-transform duration-300" style={{ animationDelay: '0.4s' }}>
+
+          <div
+            className="bg-white/10 backdrop-blur-sm rounded-lg p-6 transform hover:scale-105 transition-transform duration-300"
+            style={{ animationDelay: "0.4s" }}
+          >
             <div className="text-3xl mb-3">🎯</div>
-            <h3 className="text-lg font-semibold text-white mb-2">Student Focused</h3>
-            <p className="text-gray-300 text-sm">Built specifically for student branch communities</p>
+            <h3 className="text-lg font-semibold text-white mb-2">
+              Student Focused
+            </h3>
+            <p className="text-gray-300 text-sm">
+              Built specifically for student branch communities
+            </p>
           </div>
         </div>
 
         {/* Contact Info */}
         <div className="bg-white/5 backdrop-blur-sm rounded-lg p-6 max-w-md mx-auto">
-          <h3 className="text-lg font-semibold text-white mb-3">Stay Updated</h3>
+          <h3 className="text-lg font-semibold text-white mb-3">
+            Stay Updated
+          </h3>
           <p className="text-gray-300 text-sm mb-4">
-            We're working hard to bring you something amazing. Follow our progress!
+            We're working hard to bring you something amazing. Follow our
+            progress!
           </p>
           <div className="flex justify-center space-x-4">
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-300 transform hover:scale-105">
