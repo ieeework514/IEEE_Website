@@ -1,8 +1,8 @@
-// Contact us page 
+// gallery 
 
 import UnderDevelopment from "../comingsoon/page";
 
-export default function Contact_us(){
+export default function Gallery(){
 
     return(
 
