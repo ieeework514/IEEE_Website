@@ -54,16 +54,16 @@ const Footer = () => {
   ];
 
   const resources = [
-    { label: 'Documentation', href: '/documentation' },
-    { label: 'Blog', href: '/blog' },
-    { label: 'Research Papers', href: '/research-papers' },
-    { label: 'Project Gallery', href: '/project-gallery' },
+    { label: 'Documentation', href: '/comingsoon' },
+    { label: 'Blog', href: '/comingsoon' },
+    { label: 'Research Papers', href: '/comingsoon' },
+    { label: 'Project Gallery', href: '/comingsoon' },
   ];
 
   const policies = [
-    { label: 'Privacy Policy', href: '/privacy-policy' },
-    { label: 'Terms of Service', href: '/terms-of-service' },
-    { label: 'Cookie Policy', href: '/cookie-policy' },
+    { label: 'Privacy Policy', href: '/comingsoon' },
+    { label: 'Terms of Service', href: '/comingsoon' },
+    { label: 'Cookie Policy', href: '/comingsoon' },
   ];
 
   return (
