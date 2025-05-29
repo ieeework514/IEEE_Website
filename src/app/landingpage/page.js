@@ -10,6 +10,7 @@ import { Francois_One } from "next/font/google";
 import { Merriweather } from "next/font/google";
 import { Poppins } from "next/font/google";
 import CanvasCursor from "@/components/ui/canvas-cursor-effect";
+import { useRouter } from "next/navigation";
 
 const poppins = Poppins({
   weight: ['400'],
@@ -29,6 +30,8 @@ const merriweather = Merriweather({
 
 
 export function BackgroundBeamsDemo() {
+
+  const router =useRouter()
   return (
     <div className="min-h-screen w-full rounded-md  relative flex flex-col bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 items-center justify-center antialiased">
       {/* <AnimatedCircles></AnimatedCircles> */}
@@ -41,8 +44,8 @@ export function BackgroundBeamsDemo() {
       <h1 className={`sm:text-4xl ${poppins.className}  text-xl sm:mt-4 mt-6 font-serif text-center text-[#c5c2c2] `} >Rajiv Gandhi Institue Of Petroleum Technology</h1>
 
       <div className="flex flex-row gap-10 pt-8 z-20 ">
-        <button className={ ` sm:w-[200px] w-[170px] h-[50px] rounded-lg sm:text-xl  cursor-pointer ${merriweather.className} text-white bg-blue-600 `}> About IEEE_RGIPT</button>
-        <button className={`w-[100px] ${merriweather.className} h-[50px] rounded-lg text-xl cursor-pointer bg-[white]`}> Events </button>
+        <button onClick={()=> router.push('/about_us')} className={ ` sm:w-[200px] w-[170px] h-[50px] rounded-lg sm:text-xl  cursor-pointer ${merriweather.className} text-white bg-blue-600 `}> About IEEE_RGIPT</button>
+        <button onClick={()=> router.push('/Upcomingevents/details')} className={`w-[100px] ${merriweather.className} h-[50px] rounded-lg text-xl cursor-pointer bg-[white]`}> Events </button>
 
         
 
