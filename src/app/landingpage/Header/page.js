@@ -24,31 +24,31 @@ export function NavbarDemo() {
   const navItems = [
     {
       name: "Events",
-      link: "#features",
+      link: 'Upcomingevents/details',
     },
     {
       name: "Our Team",
-      link: "#pricing",
+      link: "/team",
     },
     {
       name: "Leaderboard",
-      link: "#contact",
+      link: "leaderboard",
     },
     {
         name: "Workshop",
-        link: "",
+        link: "/workshop",
     },
     {
         name: "About Us",
-        link: ""
+        link: "/about_us"
     },
     {
         name: "Alumni",
-        link: "",
+        link: "/alumni",
     },
     {
         name:"Contact Us",
-        link: ""
+        link: "/contact_us"
     }
   ];
 

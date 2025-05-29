@@ -87,7 +87,7 @@ const UpcomingHighlights = () => {
                         return (
                             <Link
                                 key={event.id}
-                                href={'/Upcomingevents/upcomingeventsdetails'}
+                                href={'/Upcomingevents/details'}
                                 className={`group relative transform transition-all duration-700 ${event.delay} ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
                                     }`}
                                 onMouseEnter={() => setHoveredCard(event.id)}
@@ -143,7 +143,7 @@ const UpcomingHighlights = () => {
                 {/* View All Events Button */}
                 <div className={`text-center transform transition-all duration-1000 delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
                     }`}>
-                    <button className="group relative inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-purple-500/25">
+                    <button onClick={()=> router.push('/Upcomingevents/details')} className="group relative inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-purple-500/25">
                         <span className="relative z-10 flex items-center">
                             View All Events
                             <ArrowRight
