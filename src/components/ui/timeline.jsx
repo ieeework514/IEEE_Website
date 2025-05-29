@@ -52,7 +52,7 @@ export const Timeline = ({
                   className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
               </div>
               <h3
-                className="hidden h-[57px] md:block text-xl md:pl-20 md:text-5xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent dark:bg-gradient-to-r ">
+                className="hidden sm:h-[57px] md:block text-xl md:pl-20 md:text-5xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent dark:bg-gradient-to-r ">
                 {item.title}
               </h3>
             </div>
