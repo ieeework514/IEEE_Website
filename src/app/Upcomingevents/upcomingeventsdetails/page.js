@@ -19,7 +19,7 @@ import {
 
 const UpcomingEventsDetails = () => {
     const [isVisible, setIsVisible] = useState(false);
-    const [activeFilter, setActiveFilter] = useState('Hackathons');
+    const [activeFilter, setActiveFilter] = useState('Series');
     const [hoveredCard, setHoveredCard] = useState(null);
 
     useEffect(() => {
@@ -58,33 +58,53 @@ const UpcomingEventsDetails = () => {
     ];
 
     const filters = [
-        { name: 'Hackathons', icon: Trophy },
+        { name: 'Series', icon: Target },
         { name: 'Competitions', icon: Code },
         { name: 'Workshops', icon: Users },
-        { name: 'Meetups', icon: Target }
+        { name: 'Hackathons', icon: Trophy }
     ];
 
     const events = [
         {
             id: 1,
-            category: 'Hackathons',
-            date: 'Wednesday, January 29',
-            title: 'Mega Project Hackathon',
+            category: 'Series',
+            date: 'Every Sunday from 1 june to 27 july',
+            title: 'Dev Wave',
             tags: ['Hackathon', 'Intermediate'],
             status: 'LIVE NOW',
             statusColor: 'text-green-400',
             timeRemaining: null,
-            description: '48-hour hackathon to build innovative solutions for real-world problems',
-            techStack: ['React', 'Node.js', 'Python', 'AWS'],
-            prizes: ['₹50,000', '₹30,000', '₹20,000'],
+            description: ' SkillUp Series 2.0 presents DevWave, an 8-week journey designed to transform you into a skilled full-stack web developer. From mastering design principles to building and deploying full-fledged applications, DevWave blends learning with hands-on practice and weekly challenges to accelerate your growth',
+            techStack: ['UI/UX Designing', 'Frontend', 'Backend', 'MERN Stack'],
+            // prizes: ['₹50,000', '₹30,000', '₹20,000'],
             registrations: '100+ registrations',
-            teamSize: '2-4 members',
-            location: 'Main Auditorium',
-            gradient: 'from-blue-600 to-purple-600'
+            // teamSize: '2-4 members',
+            location: 'Online',
+            gradient: 'from-blue-600 to-purple-600',
+            registration_link: 'https://forms.gle/8MFKgkZGbgUha1re9'
+        },
+
+        {
+            id: 2,
+            category: 'Series',
+            date: 'Every Saturday from 1 june to 27 july',
+            title: 'Code Nex',
+            tags: ['Hackathon', 'Intermediate'],
+            status: 'LIVE NOW',
+            statusColor: 'text-green-400',
+            timeRemaining: null,
+            description: '   SkillUp Series 2.0 presents CodeNex, an 8-week competitive programming journey designed to elevate your problem-solving skills. With structured arenas and weekly contests, this track helps you build a strong DSA foundation and grow into a confident coder ready for any challenge',
+            techStack: ['C++', 'Logical Learning', 'Dynamic Programming'],
+            // prizes: ['₹50,000', '₹30,000', '₹20,000'],
+            registrations: '100+ registrations',
+            // teamSize: '2-4 members',
+            location: 'Online',
+            gradient: 'from-blue-600 to-purple-600',
+            registration_link: 'https://forms.gle/CeeKjDNg1UYrtoBt9'
         },
         {
             id: 2,
-            category: 'Workshops',
+            // category: 'Workshops',
             date: 'Friday, February 16',
             title: 'L.E.A.D - Learn Explore And Develop',
             tags: ['Workshop', 'Advanced'],
@@ -97,10 +117,11 @@ const UpcomingEventsDetails = () => {
             teamSize: null,
             location: 'Virtual',
             gradient: 'from-purple-600 to-pink-600'
+            
         },
         {
             id: 3,
-            category: 'Competitions',
+            // category: 'Competitions',
             date: 'Wednesday, January 29',
             title: 'Coding Weekender',
             tags: ['Competition', 'Beginner'],
@@ -280,13 +301,13 @@ const UpcomingEventsDetails = () => {
                                     )}
 
                                     {/* Description */}
-                                    <p className="text-gray-400 mb-4 hover:text-gray-300 transition-colors duration-300">
+                                    <p className="text-gray-200 mb-4 hover:text-gray-300   transition-colors duration-300">
                                         {event.description}
                                     </p>
 
                                     {/* Tech Stack */}
                                     <div className="mb-4">
-                                        <div className="text-white font-medium mb-2">Tech Stack:</div>
+                                        <div className="text-white font-medium mb-2">Tech Stack You will Learn:</div>
                                         <div className="flex flex-wrap gap-2">
                                             {event.techStack.map((tech, idx) => (
                                                 <span
@@ -329,7 +350,7 @@ const UpcomingEventsDetails = () => {
                                     {/* Simple Register Button */}
                                     <div className="w-full">
                                         <Link
-                                            href="/registration"
+                                            href={event.registration_link}
                                             className="inline-block w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 hover:shadow-lg text-center cursor-pointer"
                                         >
                                             <span className="flex items-center justify-center">
