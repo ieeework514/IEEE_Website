@@ -24,7 +24,7 @@ export function NavbarDemo() {
   const navItems = [
     {
       name: "Events",
-      link: 'Upcomingevents/details',
+      link: '/Upcomingevents/details',
     },
     {
       name: "Our Team",
@@ -32,7 +32,7 @@ export function NavbarDemo() {
     },
     {
       name: "Leaderboard",
-      link: "leaderboard",
+      link: "/leaderboard",
     },
     {
         name: "Workshop",

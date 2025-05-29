@@ -4,6 +4,7 @@
 import { motion } from "framer-motion";
 import { Poppins } from "next/font/google";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const poppins=Poppins({
   weight: ['400'],
@@ -12,6 +13,7 @@ const poppins=Poppins({
 
 const CodingLeaderboard = () => {
   const [activeTab, setActiveTab] = useState("signup");
+  const router=useRouter()
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -72,7 +74,7 @@ const CodingLeaderboard = () => {
               Sign Up Now
             </button>
             <button
-              onClick={() => setActiveTab("leaderboard")}
+              onClick={() => router.push('/leaderboard')}
               className={`px-6 py-3 rounded-full font-medium transition-all ${activeTab === "leaderboard" ? "bg-white text-blue-600 shadow-lg" : "bg-blue-500 text-white hover:bg-blue-400"}`}
             >
               View Leaderboard →
@@ -151,3 +153,5 @@ const StatCard = ({ number, label, delay }) => {
 };
 
 export default CodingLeaderboard;
+
+

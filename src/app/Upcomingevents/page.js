@@ -72,8 +72,8 @@ const UpcomingHighlights = () => {
                 {/* Header Section */}
                 <div className={`text-center mb-16 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
                     }`}>
-                    <h1 className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 mb-6 animate-gradient-x">
-                        Upcoming Highlights
+                    <h1 className="text-5xl md:text-6xl h-[100px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 mb-6 animate-gradient-x">
+                        Upcoming Events
                     </h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
                         Don't miss out on our exciting upcoming events and activities

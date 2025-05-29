@@ -16,6 +16,7 @@ import {
     Target,
     Zap
 } from 'lucide-react';
+import { TimelineDemo } from '@/app/Timeline/page';
 
 const UpcomingEventsDetails = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -117,7 +118,7 @@ const UpcomingEventsDetails = () => {
             teamSize: null,
             location: 'Virtual',
             gradient: 'from-purple-600 to-pink-600'
-            
+
         },
         {
             id: 3,
@@ -166,7 +167,7 @@ const UpcomingEventsDetails = () => {
                 {/* Header Section */}
                 <div className={`text-center mb-16 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
                     }`}>
-                    <h1 className="text-5xl md:text-6xl font-bold mb-6">
+                    <h1 className="text-5xl mt-10 md:text-6xl font-bold mb-6">
                         <span className="text-white">Upcoming </span>
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 animate-gradient-x">Events</span>
                     </h1>
@@ -175,52 +176,6 @@ const UpcomingEventsDetails = () => {
                     </p>
                 </div>
 
-                {/* Alert Banner */}
-                <div className={`mb-16 transform transition-all duration-1000 delay-200 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-                    }`}>
-                    <div className="bg-gradient-to-r from-blue-900/50 to-purple-900/50 backdrop-blur-xl border border-blue-500/30 rounded-2xl p-6">
-                        <div className="flex items-center justify-center text-center">
-                            <Info className="text-blue-400 mr-3 flex-shrink-0" size={24} />
-                            <div>
-                                <h3 className="text-blue-400 font-semibold mb-2">Attention!</h3>
-                                <p className="text-gray-300">
-                                    Our events calendar is currently being updated. Check back soon for the latest events and workshops!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Stats Section */}
-                <div className={`grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-                    }`}>
-                    {stats.map((stat, index) => {
-                        const Icon = stat.icon;
-                        return (
-                            <div
-                                key={stat.id}
-                                className="group relative bg-gradient-to-br from-gray-900/50 to-gray-800/50 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-6 text-center hover:border-gray-600/50 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20 hover:scale-105"
-                                style={{ animationDelay: `${index * 100}ms` }}
-                            >
-                                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
-
-                                <div className="relative z-10">
-                                    <div className={`inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r ${stat.gradient} mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                                        <Icon size={24} className="text-white" />
-                                    </div>
-
-                                    <div className="text-3xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 transition-all duration-300">
-                                        {stat.number}
-                                    </div>
-
-                                    <div className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">
-                                        {stat.label}
-                                    </div>
-                                </div>
-                            </div>
-                        );
-                    })}
-                </div>
 
                 {/* Filter Tabs */}
                 <div className={`flex flex-wrap justify-center gap-4 mb-12 transform transition-all duration-1000 delay-400 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
@@ -243,9 +198,12 @@ const UpcomingEventsDetails = () => {
                     })}
                 </div>
 
+
+
+
                 {/* Events Grid */}
                 {/* Events Grid */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 mb-20 lg:grid-cols-3 gap-8">
                     {filteredEvents.map((event, index) => (
                         <div
                             key={event.id}
@@ -367,6 +325,58 @@ const UpcomingEventsDetails = () => {
                         </div>
                     ))}
                 </div>
+
+                {/* Alert Banner */}
+                <div className={`mb-16 transform transition-all duration-1000 delay-200 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+                    }`}>
+                    <div className="bg-gradient-to-r from-blue-900/50 to-purple-900/50 backdrop-blur-xl border border-blue-500/30 rounded-2xl p-6">
+                        <div className="flex items-center justify-center text-center">
+                            <Info className="text-blue-400 mr-3 flex-shrink-0" size={24} />
+                            <div>
+                                <h3 className="text-blue-400 font-semibold mb-2">Attention!</h3>
+                                <p className="text-gray-300">
+                                    Our events calendar is currently being updated. Check back soon for the latest events and workshops!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Stats Section */}
+                <div className={`grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+                    }`}>
+                    {stats.map((stat, index) => {
+                        const Icon = stat.icon;
+                        return (
+                            <div
+                                key={stat.id}
+                                className="group relative bg-gradient-to-br from-gray-900/50 to-gray-800/50 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-6 text-center hover:border-gray-600/50 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20 hover:scale-105"
+                                style={{ animationDelay: `${index * 100}ms` }}
+                            >
+                                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+
+                                <div className="relative z-10">
+                                    <div className={`inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r ${stat.gradient} mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                                        <Icon size={24} className="text-white" />
+                                    </div>
+
+                                    <div className="text-3xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 transition-all duration-300">
+                                        {stat.number}
+                                    </div>
+
+                                    <div className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">
+                                        {stat.label}
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+
+
+                
+
+
             </div>
 
             <style jsx>{`
@@ -407,6 +417,12 @@ const UpcomingEventsDetails = () => {
           animation-delay: 4s;
         }
       `}</style>
+
+
+      <TimelineDemo></TimelineDemo>
+
+
+
         </div>
     );
 };
