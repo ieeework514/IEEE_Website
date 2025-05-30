@@ -37,7 +37,8 @@ export const Timeline = ({
       ref={containerRef}>
       <div className="max-w-7xl mx-auto flex justify-center items-center py-10 px-4 md:px-8 lg:px-10">
         <h2 className={`sm:text-7xl text-4xl mb-2 ${tinos.className}  bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent max-w-4xl`}>
-         Events Timeline
+
+        Past Events 
         </h2>
        
       </div>

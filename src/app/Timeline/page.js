@@ -8,35 +8,36 @@ import { Timeline } from "@/components/ui/timeline";
 export function TimelineDemo() {
   const data = [
     {
-      title: "2024",
+      title: "CS Workshop Series 2.0",
       content: (
         <div>
           <p
-            className="mb-8 text-xs font-normal bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent md:text-sm dark:text-neutral-200">
-          About Events
+            className="mb-8 text-xs font-serif bg-white bg-clip-text text-transparent md:text-sm dark:text-neutral-200">
+          The IEEE CS WORKSHOP 2.0 series was a group of training sessions designed to help students improve their knowledge and skills in important areas of computer science.It included hand on practices on the domains like CP and DSA followed by WEB DEVELOPMENT and OPEN SOURCE & GITHUB SESSIONS . Furthermore,workshops sessions in fields like AI & ML, AR & VR introduced students to the latest technologies and how they are used in the modern world. Thereafter, APP DEVELOPMENT workshop focused on teaching the essential steps for app creation.
+
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://assets.aceternity.com/templates/startup-1.webp"
+              src="/kodekurrentimage/ARVR.jpg"
+              alt="kodekurrentimageARVR.jpg"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
+            <img
+              src="/kodekurrentimage/AIML.jpg"
               alt="startup template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/templates/startup-2.webp"
-              alt="startup template"
+              src="/kodekurrentimage/DSA.jpg"
+              alt="kodekurrentimageDSA.jpg"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/templates/startup-3.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
-            <img
-              src="https://assets.aceternity.com/templates/startup-4.webp"
-              alt="startup template"
+              src="/kodekurrentimage/OPENSOURCE.jpg"
+              alt="kodekurrentimageOPENSOURCE.jpg"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
@@ -45,12 +46,12 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "Early 2023",
+      title: "KODEKURRENT",
       content: (
         <div>
           <p
-            className="mb-8 text-xs font-normal bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent md:text-sm dark:text-neutral-200">
-           About Events
+            className="mb-8 text-xs font-serif bg-white bg-clip-text text-transparent md:text-sm dark:text-neutral-200">
+           KodeKurrent-Season One Phase-2 was a 2 day HACKATHON event conducted offline to bring together creative minds , tech enthusiasts and problem solvers under one roof . The hackathon fostered learning, networking, and hands-on experience, leaving participants inspired and empowered.
           </p>
           <p
             className="mb-8 text-xs font-normal bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent md:text-sm dark:text-neutral-200">
@@ -58,40 +59,40 @@ export function TimelineDemo() {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
+              src="/workshopseries/IMG_2015.jpg"
               alt="hero template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/features-section.png"
+              src="/workshopseries/IMG_0643.jpg"
               alt="feature template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/pro/bento-grids.png"
+              src="/workshopseries/IMG_2050.jpg"
               alt="bento template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/cards.png"
+              src="/workshopseries/IMG_2055.jpg"
               alt="cards template"
-              width={500}
-              height={500}
+              width={300}
+              height={300}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
           </div>
         </div>
       ),
     },
     {
-      title: "Changelog",
+      title: "Orientation",
       content: (
         <div>
           <p
-            className="mb-4 text-xs font-normal bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent md:text-sm dark:text-neutral-200">
-            Deployed 5 new components on Aceternity today
+            className="mb-4 text-xs bg-white font-serif bg-clip-text text-transparent md:text-sm dark:text-neutral-200">
+           IEEE_ SB ORIENTATION  was an introductory event which familiarised students with our organization and sparked a tech and innovation enthusiasm among them.The goal of the session was to familiarize students with the structure, benefits, and activities of the IEEE Student Branch and encourage them to become active members of this global professional community.
           </p>
           <div className="mb-8">
             {/* <div
@@ -117,29 +118,18 @@ export function TimelineDemo() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
+              src="/workshopseries/1000077230.jpg"
               alt="hero template"
-              width={500}
-              height={500}
+              width={300}
+              height={300}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/features-section.png"
+              src="/workshopseries/1000077244.jpg"
               alt="feature template"
-              width={500}
-              height={500}
+              width={300}
+              height={300}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
-            <img
-              src="https://assets.aceternity.com/pro/bento-grids.png"
-              alt="bento template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
-            <img
-              src="https://assets.aceternity.com/cards.png"
-              alt="cards template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
+           
           </div>
         </div>
       ),
