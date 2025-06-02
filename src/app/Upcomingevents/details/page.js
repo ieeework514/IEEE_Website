@@ -119,7 +119,7 @@ const UpcomingEventsDetails = () => {
             // teamSize: '2-4 members',
             location: 'Online',
             gradient: 'from-blue-600 to-purple-600',
-            registration_link: 'https://forms.gle/CeeKjDNg1UYrtoBt9'
+            registration_link: 'https://forms.gle/LuHJZbRXjmdCcJxs6'
         },
         {
             id: 3,
