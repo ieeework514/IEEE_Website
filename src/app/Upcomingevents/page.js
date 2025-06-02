@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { ArrowRight, Calendar, Users, Trophy, WavesIcon, ComponentIcon } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import { IconSunElectricity, IconWavesElectricity } from '@tabler/icons-react';
 
 const UpcomingHighlights = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -27,10 +28,10 @@ const UpcomingHighlights = () => {
         },
         {
             id: 2,
-            date: "Every Weekend",
-            title: "Tech Talk Series",
-            description: "Industry expert sessions",
-            icon: Users,
+            date: "1 June to 31 June",
+            title: "Electro Wave",
+            description: "Arduino , Matlab AND Simulation Practice",
+            icon: IconWavesElectricity,
             gradient: "from-purple-600 to-pink-600",
             delay: "delay-200"
         },
