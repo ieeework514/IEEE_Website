@@ -41,7 +41,7 @@ export function BackgroundBeamsDemo() {
 
       </div>
       <h1 className={`sm:text-8xl ${merriweather.className}  sm:text-5xl text-4xl sm:mt-4 font-serif bg-gradient-to-tl from-[#615f5f] to-[#d5e4e2] bg-clip-text text-transparent `} >Student Branch</h1>
-      <h1 className={`sm:text-4xl ${poppins.className}  text-xl sm:mt-4 mt-6 font-serif text-center text-[#c5c2c2] `} >Rajiv Gandhi Institue Of Petroleum Technology</h1>
+      <h1 className={`sm:text-4xl ${poppins.className}  text-xl sm:mt-4 mt-6 font-serif text-center text-[#c5c2c2] `} >Rajiv Gandhi Institute Of Petroleum Technology</h1>
 
       <div className="flex flex-row gap-10 pt-8 z-20 ">
         <button onClick={()=> router.push('/about_us')} className={ ` sm:w-[200px] w-[170px] h-[50px] rounded-lg sm:text-xl  cursor-pointer ${merriweather.className} text-white bg-blue-600 `}> About IEEE_RGIPT</button>
