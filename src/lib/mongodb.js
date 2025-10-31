@@ -1,6 +1,6 @@
 import { MongoClient } from "mongodb";
 
-const uri = "mongodb://127.0.0.1:27017"; 
+const uri = "mongodb+srv://ieeework514_db_user:hLWHMUFdYYD6gLyu@cluster0.dgia4qf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 const options = {};
 
 let client;
@@ -13,3 +13,4 @@ if (!global._mongoClientPromise) {
 
 clientPromise = global._mongoClientPromise;
 export default clientPromise;
+ 
