@@ -1,17 +1,27 @@
 import { MongoClient } from "mongodb";
-import dotenv from "dotenv";
+
+if (!process.env.MONGODB_URI) {
+  throw new Error('Please add your Mongo URI to .env.local');
+}
 
 const uri = process.env.MONGO_DB_URL;
-const options = {};
+const options = {
+  serverSelectionTimeoutMS: 10000,
+  socketTimeoutMS: 45000,
+};
 
 let client;
 let clientPromise;
 
-if (!global._mongoClientPromise) {
+if (process.env.NODE_ENV === "development") {
+  if (!global._mongoClientPromise) {
+    client = new MongoClient(uri, options);
+    global._mongoClientPromise = client.connect();
+  }
+  clientPromise = global._mongoClientPromise;
+} else {
   client = new MongoClient(uri, options);
-  global._mongoClientPromise = client.connect();
+  clientPromise = client.connect();
 }
 
-clientPromise = global._mongoClientPromise;
 export default clientPromise;
- 
