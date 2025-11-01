@@ -1,6 +1,7 @@
 import { MongoClient } from "mongodb";
+import dotenv from "dotenv";
 
-const uri = "mongodb+srv://ieeework514_db_user:hLWHMUFdYYD6gLyu@cluster0.dgia4qf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = process.env.MONGO_DB_URL;
 const options = {};
 
 let client;
